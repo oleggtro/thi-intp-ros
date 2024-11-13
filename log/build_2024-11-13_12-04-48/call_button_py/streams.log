@@ -1,0 +1,38 @@
+[2.085s] Invoking command in '/home/ros2/ros2_ws/src/aufzug/call_button_py': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros2/ros2_ws/src/aufzug/build/call_button_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros2/ros2_ws/src/aufzug/install/call_button_py/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/call_button_py build --build-base /home/ros2/ros2_ws/src/aufzug/build/call_button_py/build install --record /home/ros2/ros2_ws/src/aufzug/build/call_button_py/install.log --single-version-externally-managed install_data
+[2.358s] running egg_info
+[2.359s] creating ../build/call_button_py/call_button_py.egg-info
+[2.406s] writing ../build/call_button_py/call_button_py.egg-info/PKG-INFO
+[2.406s] writing dependency_links to ../build/call_button_py/call_button_py.egg-info/dependency_links.txt
+[2.406s] writing entry points to ../build/call_button_py/call_button_py.egg-info/entry_points.txt
+[2.407s] writing requirements to ../build/call_button_py/call_button_py.egg-info/requires.txt
+[2.407s] writing top-level names to ../build/call_button_py/call_button_py.egg-info/top_level.txt
+[2.407s] writing manifest file '../build/call_button_py/call_button_py.egg-info/SOURCES.txt'
+[2.445s] reading manifest file '../build/call_button_py/call_button_py.egg-info/SOURCES.txt'
+[2.448s] adding license file 'LICENSE'
+[2.448s] writing manifest file '../build/call_button_py/call_button_py.egg-info/SOURCES.txt'
+[2.448s] running build
+[2.448s] running build_py
+[2.449s] creating /home/ros2/ros2_ws/src/aufzug/build/call_button_py/build
+[2.449s] creating /home/ros2/ros2_ws/src/aufzug/build/call_button_py/build/lib
+[2.449s] creating /home/ros2/ros2_ws/src/aufzug/build/call_button_py/build/lib/call_button_py
+[2.451s] copying call_button_py/call_button_function.py -> /home/ros2/ros2_ws/src/aufzug/build/call_button_py/build/lib/call_button_py
+[2.454s] copying call_button_py/__init__.py -> /home/ros2/ros2_ws/src/aufzug/build/call_button_py/build/lib/call_button_py
+[2.454s] running install
+[2.466s] running install_lib
+[2.492s] creating /home/ros2/ros2_ws/src/aufzug/install/call_button_py/lib/python3.12/site-packages/call_button_py
+[2.492s] copying /home/ros2/ros2_ws/src/aufzug/build/call_button_py/build/lib/call_button_py/call_button_function.py -> /home/ros2/ros2_ws/src/aufzug/install/call_button_py/lib/python3.12/site-packages/call_button_py
+[2.493s] copying /home/ros2/ros2_ws/src/aufzug/build/call_button_py/build/lib/call_button_py/__init__.py -> /home/ros2/ros2_ws/src/aufzug/install/call_button_py/lib/python3.12/site-packages/call_button_py
+[2.496s] byte-compiling /home/ros2/ros2_ws/src/aufzug/install/call_button_py/lib/python3.12/site-packages/call_button_py/call_button_function.py to call_button_function.cpython-312.pyc
+[2.496s] byte-compiling /home/ros2/ros2_ws/src/aufzug/install/call_button_py/lib/python3.12/site-packages/call_button_py/__init__.py to __init__.cpython-312.pyc
+[2.496s] running install_data
+[2.497s] creating /home/ros2/ros2_ws/src/aufzug/install/call_button_py/share/ament_index
+[2.497s] creating /home/ros2/ros2_ws/src/aufzug/install/call_button_py/share/ament_index/resource_index
+[2.497s] creating /home/ros2/ros2_ws/src/aufzug/install/call_button_py/share/ament_index/resource_index/packages
+[2.497s] copying resource/call_button_py -> /home/ros2/ros2_ws/src/aufzug/install/call_button_py/share/ament_index/resource_index/packages
+[2.497s] copying package.xml -> /home/ros2/ros2_ws/src/aufzug/install/call_button_py/share/call_button_py
+[2.497s] running install_egg_info
+[2.520s] Copying ../build/call_button_py/call_button_py.egg-info to /home/ros2/ros2_ws/src/aufzug/install/call_button_py/lib/python3.12/site-packages/call_button_py-0.0.0-py3.12.egg-info
+[2.535s] running install_scripts
+[2.712s] Installing talker script to /home/ros2/ros2_ws/src/aufzug/install/call_button_py/lib/call_button_py
+[2.712s] writing list of installed files to '/home/ros2/ros2_ws/src/aufzug/build/call_button_py/install.log'
+[2.747s] Invoked command in '/home/ros2/ros2_ws/src/aufzug/call_button_py' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros2/ros2_ws/src/aufzug/build/call_button_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros2/ros2_ws/src/aufzug/install/call_button_py/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/call_button_py build --build-base /home/ros2/ros2_ws/src/aufzug/build/call_button_py/build install --record /home/ros2/ros2_ws/src/aufzug/build/call_button_py/install.log --single-version-externally-managed install_data

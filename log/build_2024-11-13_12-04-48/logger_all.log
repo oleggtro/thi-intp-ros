@@ -1,0 +1,151 @@
+[0.112s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'call_button_py']
+[0.112s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=3, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['call_button_py'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7a3de9726ed0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7a3de9884fe0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7a3de9884fe0>>)
+[0.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.153s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.154s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ros2/ros2_ws/src/aufzug'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(call_button_py) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(call_button_py) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(call_button_py) by extension 'ignore_ament_install'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(call_button_py) by extensions ['colcon_pkg']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(call_button_py) by extension 'colcon_pkg'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(call_button_py) by extensions ['colcon_meta']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(call_button_py) by extension 'colcon_meta'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(call_button_py) by extensions ['ros']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(call_button_py) by extension 'ros'
+[0.188s] DEBUG:colcon.colcon_core.package_identification:Package 'call_button_py' with type 'ros.ament_python' and name 'call_button_py'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(call_panel) by extensions ['ignore', 'ignore_ament_install']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(call_panel) by extension 'ignore'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(call_panel) by extension 'ignore_ament_install'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(call_panel) by extensions ['colcon_pkg']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(call_panel) by extension 'colcon_pkg'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(call_panel) by extensions ['colcon_meta']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(call_panel) by extension 'colcon_meta'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(call_panel) by extensions ['ros']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(call_panel) by extension 'ros'
+[0.191s] DEBUG:colcon.colcon_core.package_identification:Package 'call_panel' with type 'ros.ament_cmake' and name 'Aufzug'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node) by extensions ['ignore', 'ignore_ament_install']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node) by extension 'ignore'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node) by extension 'ignore_ament_install'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node) by extensions ['colcon_pkg']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node) by extension 'colcon_pkg'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node) by extensions ['colcon_meta']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node) by extension 'colcon_meta'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node) by extensions ['ros']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node) by extension 'ros'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node) by extensions ['cmake', 'python']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node) by extension 'cmake'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node) by extension 'python'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node) by extensions ['python_setup_py']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node) by extension 'python_setup_py'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node/src) by extensions ['ignore', 'ignore_ament_install']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node/src) by extension 'ignore'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node/src) by extension 'ignore_ament_install'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node/src) by extensions ['colcon_pkg']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node/src) by extension 'colcon_pkg'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node/src) by extensions ['colcon_meta']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node/src) by extension 'colcon_meta'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node/src) by extensions ['ros']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node/src) by extension 'ros'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node/src) by extensions ['cmake', 'python']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node/src) by extension 'cmake'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node/src) by extension 'python'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node/src) by extensions ['python_setup_py']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(elevator_node/src) by extension 'python_setup_py'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.223s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'Aufzug' in 'call_panel'
+[0.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.232s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 308 installed packages in /opt/ros/jazzy
+[0.233s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'call_button_py' build argument 'cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'call_button_py' build argument 'cmake_target' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'call_button_py' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'call_button_py' build argument 'cmake_clean_cache' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'call_button_py' build argument 'cmake_clean_first' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'call_button_py' build argument 'cmake_force_configure' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'call_button_py' build argument 'ament_cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'call_button_py' build argument 'catkin_cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'call_button_py' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.295s] DEBUG:colcon.colcon_core.verb:Building package 'call_button_py' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros2/ros2_ws/src/aufzug/build/call_button_py', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros2/ros2_ws/src/aufzug/install/call_button_py', 'merge_install': False, 'path': '/home/ros2/ros2_ws/src/aufzug/call_button_py', 'symlink_install': False, 'test_result_base': None}
+[0.296s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.298s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.299s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ros2/ros2_ws/src/aufzug/call_button_py' with build type 'ament_python'
+[0.299s] Level 1:colcon.colcon_core.shell:create_environment_hook('call_button_py', 'ament_prefix_path')
+[0.303s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.303s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros2/ros2_ws/src/aufzug/install/call_button_py/share/call_button_py/hook/ament_prefix_path.ps1'
+[0.313s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros2/ros2_ws/src/aufzug/install/call_button_py/share/call_button_py/hook/ament_prefix_path.dsv'
+[0.315s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros2/ros2_ws/src/aufzug/install/call_button_py/share/call_button_py/hook/ament_prefix_path.sh'
+[0.318s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.318s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.643s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ros2/ros2_ws/src/aufzug/call_button_py'
+[0.643s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.643s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.387s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros2/ros2_ws/src/aufzug/call_button_py': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros2/ros2_ws/src/aufzug/build/call_button_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros2/ros2_ws/src/aufzug/install/call_button_py/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/call_button_py build --build-base /home/ros2/ros2_ws/src/aufzug/build/call_button_py/build install --record /home/ros2/ros2_ws/src/aufzug/build/call_button_py/install.log --single-version-externally-managed install_data
+[3.049s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros2/ros2_ws/src/aufzug/call_button_py' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ros2/ros2_ws/src/aufzug/build/call_button_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros2/ros2_ws/src/aufzug/install/call_button_py/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/call_button_py build --build-base /home/ros2/ros2_ws/src/aufzug/build/call_button_py/build install --record /home/ros2/ros2_ws/src/aufzug/build/call_button_py/install.log --single-version-externally-managed install_data
+[3.069s] Level 1:colcon.colcon_core.environment:checking '/home/ros2/ros2_ws/src/aufzug/install/call_button_py' for CMake module files
+[3.070s] Level 1:colcon.colcon_core.environment:checking '/home/ros2/ros2_ws/src/aufzug/install/call_button_py' for CMake config files
+[3.071s] Level 1:colcon.colcon_core.environment:checking '/home/ros2/ros2_ws/src/aufzug/install/call_button_py/lib'
+[3.072s] Level 1:colcon.colcon_core.environment:checking '/home/ros2/ros2_ws/src/aufzug/install/call_button_py/bin'
+[3.072s] Level 1:colcon.colcon_core.environment:checking '/home/ros2/ros2_ws/src/aufzug/install/call_button_py/lib/pkgconfig/call_button_py.pc'
+[3.072s] Level 1:colcon.colcon_core.environment:checking '/home/ros2/ros2_ws/src/aufzug/install/call_button_py/lib/python3.12/site-packages'
+[3.072s] Level 1:colcon.colcon_core.shell:create_environment_hook('call_button_py', 'pythonpath')
+[3.072s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros2/ros2_ws/src/aufzug/install/call_button_py/share/call_button_py/hook/pythonpath.ps1'
+[3.073s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros2/ros2_ws/src/aufzug/install/call_button_py/share/call_button_py/hook/pythonpath.dsv'
+[3.073s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros2/ros2_ws/src/aufzug/install/call_button_py/share/call_button_py/hook/pythonpath.sh'
+[3.074s] Level 1:colcon.colcon_core.environment:checking '/home/ros2/ros2_ws/src/aufzug/install/call_button_py/bin'
+[3.074s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(call_button_py)
+[3.074s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros2/ros2_ws/src/aufzug/install/call_button_py/share/call_button_py/package.ps1'
+[3.076s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros2/ros2_ws/src/aufzug/install/call_button_py/share/call_button_py/package.dsv'
+[3.078s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros2/ros2_ws/src/aufzug/install/call_button_py/share/call_button_py/package.sh'
+[3.080s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros2/ros2_ws/src/aufzug/install/call_button_py/share/call_button_py/package.bash'
+[3.082s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros2/ros2_ws/src/aufzug/install/call_button_py/share/call_button_py/package.zsh'
+[3.083s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros2/ros2_ws/src/aufzug/install/call_button_py/share/colcon-core/packages/call_button_py)
+[3.084s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.085s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.085s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.085s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.099s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.099s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.099s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.149s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.149s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ros2/ros2_ws/src/aufzug/install/local_setup.ps1'
+[3.150s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ros2/ros2_ws/src/aufzug/install/_local_setup_util_ps1.py'
+[3.152s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ros2/ros2_ws/src/aufzug/install/setup.ps1'
+[3.155s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ros2/ros2_ws/src/aufzug/install/local_setup.sh'
+[3.158s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ros2/ros2_ws/src/aufzug/install/_local_setup_util_sh.py'
+[3.159s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ros2/ros2_ws/src/aufzug/install/setup.sh'
+[3.163s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ros2/ros2_ws/src/aufzug/install/local_setup.bash'
+[3.169s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ros2/ros2_ws/src/aufzug/install/setup.bash'
+[3.170s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ros2/ros2_ws/src/aufzug/install/local_setup.zsh'
+[3.172s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ros2/ros2_ws/src/aufzug/install/setup.zsh'

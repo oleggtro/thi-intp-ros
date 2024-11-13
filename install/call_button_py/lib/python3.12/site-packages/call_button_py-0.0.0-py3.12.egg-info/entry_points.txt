@@ -1,0 +1,2 @@
+[console_scripts]
+talker = call_button_py.call_button_function:main

@@ -1,6 +1,5 @@
 import rclpy
 import re
-import std_msgs.msg
 
 from rclpy.node import Node
 
@@ -13,13 +12,11 @@ class CallButton(Node):
     def __init__(self, floor):
         super().__init__('call_button')
         self.floor = floor
-        self.publisher_ = self.create_publisher(String, 'call_elevator', 10) # Versendeter Wert, Topic, Warteschlange wenn Subscriber zu langsam ist
+        self.publisher_ = self.create_publisher(int, 'call_elevator', 10) # Versendeter Wert, Topic, Warteschlange wenn Subscriber zu langsam ist
 
     def press_button(self):
-        msg = String()
-        msg.data = self.floor
-        self.publisher_.publish(msg)# maybe publish two to three times every call
-        self.get_logger().info("Call elevator to floor " + self.floor)
+        self.publisher_.publish(self.floor)# maybe publish two to three times every call
+        self.get_logger().info("Call to elevator to floor " + floor)
 
 
 def main(args=None):
@@ -38,7 +35,7 @@ def main(args=None):
 
     while(True):
         print("Floor " + call_button.floor)
-        input("Input ENTER to call elevator: ")
+        input("Input ENTER to call the elevator: ")
         call_button.press_button()
 
 

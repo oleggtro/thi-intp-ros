@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: call-button-py
+Version: 0.0.0
+Summary: elevator call button
+Maintainer: ros2
+Maintainer-email: marlene.groemer@gmx.de
+License: Apache-2.0
+License-File: LICENSE

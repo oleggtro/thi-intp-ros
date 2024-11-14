@@ -14,7 +14,7 @@ class CallButton(Node):
     def __init__(self, floor):
         super().__init__('call_button')
         self.floor = floor
-        self.publisher_ = self.create_publisher(String, 'call_elevator', 10) # Versendeter Wert, Topic, Warteschlange wenn Subscriber zu langsam ist
+        self.publisher_ = self.create_publisher(String, 'CallToFloor', 10) # Versendeter Wert, Topic, Warteschlange wenn Subscriber zu langsam ist
 
     def press_button(selfn, going_up):
         msg = CallToFloor()
@@ -22,7 +22,12 @@ class CallButton(Node):
         msg.going_up = going_up
         msg.going_down = not going_up
         self.publisher_.publish(msg)# maybe publish two to three times every call
-        self.get_logger().info("Call elevator to floor " + self.floor)
+        going = ""
+        if going_up:
+            going = "up"
+        else:
+            going = "down"
+        self.get_logger().info("Call elevator to floor " + self.floor + " going " + going)
 
 
 def main(args=None):
@@ -42,7 +47,7 @@ def main(args=None):
 
     while(True):
         print("Floor " + call_button.floor)
-        input = input("Input down or up to call elevator: ")
+        input = input("Input 'down' or 'up' to call elevator: ")
         if input == "down" or input == "up":
             if input == "down":
                 going_up = False

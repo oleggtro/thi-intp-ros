@@ -82,7 +82,7 @@ func run() error {
 				if err := pub.Publish(status); err != nil {
 					fmt.Printf("failed to publish elevator status: %v\n", err)
 				}
-				time.Sleep(1 * time.Second)
+				time.Sleep(200 * time.Millisecond)
 			}
 		}
 	}()

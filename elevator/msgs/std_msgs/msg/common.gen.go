@@ -3,31 +3,11 @@
 package std_msgs_msg
 
 /*
-#cgo LDFLAGS: "-L/home/ole/go_workspace/greeting_msgs/install/greeting_msgs/lib" "-Wl,-rpath=/home/ole/go_workspace/greeting_msgs/install/greeting_msgs/lib"
 #cgo LDFLAGS: "-L/opt/ros/jazzy/lib" "-Wl,-rpath=/opt/ros/jazzy/lib"
 
 #cgo LDFLAGS: -lrcl -lrosidl_runtime_c -lrosidl_typesupport_c -lrcutils -lrmw_implementation
 #cgo LDFLAGS: -lstd_msgs__rosidl_typesupport_c -lstd_msgs__rosidl_generator_c
 #cgo LDFLAGS: -lbuiltin_interfaces__rosidl_typesupport_c -lbuiltin_interfaces__rosidl_generator_c
-
-#cgo CFLAGS: "-I/home/ole/go_workspace/greeting_msgs/install/greeting_msgs/include/action_msgs"
-#cgo CFLAGS: "-I/home/ole/go_workspace/greeting_msgs/install/greeting_msgs/include/builtin_interfaces"
-#cgo CFLAGS: "-I/home/ole/go_workspace/greeting_msgs/install/greeting_msgs/include/example_interfaces"
-#cgo CFLAGS: "-I/home/ole/go_workspace/greeting_msgs/install/greeting_msgs/include/geometry_msgs"
-#cgo CFLAGS: "-I/home/ole/go_workspace/greeting_msgs/install/greeting_msgs/include/rcutils"
-#cgo CFLAGS: "-I/home/ole/go_workspace/greeting_msgs/install/greeting_msgs/include/rosidl_dynamic_typesupport"
-#cgo CFLAGS: "-I/home/ole/go_workspace/greeting_msgs/install/greeting_msgs/include/rosidl_runtime_c"
-#cgo CFLAGS: "-I/home/ole/go_workspace/greeting_msgs/install/greeting_msgs/include/rosidl_typesupport_interface"
-#cgo CFLAGS: "-I/home/ole/go_workspace/greeting_msgs/install/greeting_msgs/include/sensor_msgs"
-#cgo CFLAGS: "-I/home/ole/go_workspace/greeting_msgs/install/greeting_msgs/include/service_msgs"
-#cgo CFLAGS: "-I/home/ole/go_workspace/greeting_msgs/install/greeting_msgs/include/std_msgs"
-#cgo CFLAGS: "-I/home/ole/go_workspace/greeting_msgs/install/greeting_msgs/include/std_srvs"
-#cgo CFLAGS: "-I/home/ole/go_workspace/greeting_msgs/install/greeting_msgs/include/test_msgs"
-#cgo CFLAGS: "-I/home/ole/go_workspace/greeting_msgs/install/greeting_msgs/include/type_description_interfaces"
-#cgo CFLAGS: "-I/home/ole/go_workspace/greeting_msgs/install/greeting_msgs/include/unique_identifier_msgs"
-#cgo CFLAGS: "-I/home/ole/go_workspace/greeting_msgs/install/greeting_msgs/include/builtin_interfaces"
-
-#cgo CFLAGS: "-I/home/ole/go_workspace/greeting_msgs/install/greeting_msgs/include/std_msgs"
 
 #cgo CFLAGS: "-I/opt/ros/jazzy/include/action_msgs"
 #cgo CFLAGS: "-I/opt/ros/jazzy/include/builtin_interfaces"

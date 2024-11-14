@@ -4,6 +4,7 @@ package msgs
 
 import (
 	_ "oleggtro.com/intp/ros_elevator/msgs/builtin_interfaces/msg" //
+	_ "oleggtro.com/intp/ros_elevator/msgs/elevator_msgs/msg" //
 	_ "oleggtro.com/intp/ros_elevator/msgs/greeting_msgs/msg" //
 	_ "oleggtro.com/intp/ros_elevator/msgs/std_msgs/msg" //
 )

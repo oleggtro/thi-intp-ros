@@ -1,0 +1,149 @@
+[0.000000] (-) TimerEvent: {}
+[0.004781] (-) JobUnselected: {'identifier': 'Aufzug'}
+[0.004816] (-) JobUnselected: {'identifier': 'call_button_py'}
+[0.004826] (-) JobUnselected: {'identifier': 'elevator_msgs'}
+[0.004834] (-) JobUnselected: {'identifier': 'greeting_msgs'}
+[0.004842] (etagen_display) JobQueued: {'identifier': 'etagen_display', 'dependencies': OrderedDict()}
+[0.004853] (etagen_display) JobStarted: {'identifier': 'etagen_display'}
+[0.047704] (etagen_display) JobProgress: {'identifier': 'etagen_display', 'progress': 'cmake'}
+[0.047752] (etagen_display) Command: {'cmd': ['/usr/bin/cmake', '/home/ros2/intp-ros/etagen_disp/etagen_display', '-DCMAKE_INSTALL_PREFIX=/home/ros2/intp-ros/install/etagen_display'], 'cwd': '/home/ros2/intp-ros/build/etagen_display', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ros2', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ros2', 'OLDPWD': '/home/ros2/intp-ros/etagen_disp', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1878', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ros2/intp-ros/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ros2', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ros2', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ros2-VirtualBox:@/tmp/.ICE-unix/1837,unix/ros2-VirtualBox:/tmp/.ICE-unix/1837', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/5cece297_dae2_46f2_ac87_561a45dd5158', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'de_DE.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.HNWLX2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.131', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ros2/intp-ros/install/call_button_py:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ros2/intp-ros/build/etagen_display', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ros2/intp-ros/install/call_button_py/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ros2/intp-ros/install/call_button_py:/opt/ros/jazzy'}), 'shell': False}
+[0.100042] (-) TimerEvent: {}
+[0.200502] (-) TimerEvent: {}
+[0.301188] (-) TimerEvent: {}
+[0.402002] (-) TimerEvent: {}
+[0.480227] (etagen_display) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.2.0\n'}
+[0.517703] (-) TimerEvent: {}
+[0.676539] (-) TimerEvent: {}
+[0.725829] (etagen_display) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.2.0\n'}
+[0.761074] (etagen_display) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.776701] (-) TimerEvent: {}
+[0.876935] (-) TimerEvent: {}
+[0.877157] (etagen_display) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.892438] (etagen_display) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.892978] (etagen_display) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.895256] (etagen_display) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.911217] (etagen_display) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.977058] (-) TimerEvent: {}
+[1.023602] (etagen_display) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.023953] (etagen_display) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.024542] (etagen_display) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.025821] (etagen_display) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.039996] (etagen_display) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[1.078843] (-) TimerEvent: {}
+[1.182236] (-) TimerEvent: {}
+[1.183967] (etagen_display) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.283102] (-) TimerEvent: {}
+[1.348812] (etagen_display) StdoutLine: {'line': b'-- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[1.404881] (-) TimerEvent: {}
+[1.423301] (etagen_display) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.442494] (etagen_display) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.472539] (etagen_display) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.499219] (etagen_display) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.505498] (-) TimerEvent: {}
+[1.628241] (etagen_display) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[1.628407] (-) TimerEvent: {}
+[1.647626] (etagen_display) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.733501] (-) TimerEvent: {}
+[1.795613] (etagen_display) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[1.814700] (etagen_display) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[1.833784] (etagen_display) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.833915] (-) TimerEvent: {}
+[1.934693] (-) TimerEvent: {}
+[1.997044] (etagen_display) StdoutLine: {'line': b'-- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[2.024046] (etagen_display) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[2.035690] (-) TimerEvent: {}
+[2.136757] (-) TimerEvent: {}
+[2.137652] (etagen_display) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.137817] (etagen_display) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.137894] (etagen_display) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.142555] (etagen_display) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.147489] (etagen_display) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.147618] (etagen_display) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.149368] (etagen_display) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.155165] (etagen_display) StdoutLine: {'line': b'-- Configuring done (2.0s)\n'}
+[2.165298] (etagen_display) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[2.166519] (etagen_display) StdoutLine: {'line': b'-- Build files have been written to: /home/ros2/intp-ros/build/etagen_display\n'}
+[2.176320] (etagen_display) CommandEnded: {'returncode': 0}
+[2.176817] (etagen_display) JobProgress: {'identifier': 'etagen_display', 'progress': 'build'}
+[2.176835] (etagen_display) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros2/intp-ros/build/etagen_display', '--', '-j4', '-l4'], 'cwd': '/home/ros2/intp-ros/build/etagen_display', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ros2', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ros2', 'OLDPWD': '/home/ros2/intp-ros/etagen_disp', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1878', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ros2/intp-ros/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ros2', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ros2', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ros2-VirtualBox:@/tmp/.ICE-unix/1837,unix/ros2-VirtualBox:/tmp/.ICE-unix/1837', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/5cece297_dae2_46f2_ac87_561a45dd5158', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'de_DE.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.HNWLX2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.131', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ros2/intp-ros/install/call_button_py:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ros2/intp-ros/build/etagen_display', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ros2/intp-ros/install/call_button_py/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ros2/intp-ros/install/call_button_py:/opt/ros/jazzy'}), 'shell': False}
+[2.228010] (etagen_display) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/elevator_display_node.dir/src/elevator_display_node.cpp.o\x1b[0m\n'}
+[2.237917] (-) TimerEvent: {}
+[2.476947] (-) TimerEvent: {}
+[2.593813] (-) TimerEvent: {}
+[2.904180] (-) TimerEvent: {}
+[3.113841] (-) TimerEvent: {}
+[3.271386] (-) TimerEvent: {}
+[3.503904] (-) TimerEvent: {}
+[3.709010] (-) TimerEvent: {}
+[4.155825] (-) TimerEvent: {}
+[4.337086] (-) TimerEvent: {}
+[4.520161] (-) TimerEvent: {}
+[4.902013] (-) TimerEvent: {}
+[5.015017] (-) TimerEvent: {}
+[5.301146] (-) TimerEvent: {}
+[5.554102] (-) TimerEvent: {}
+[5.712345] (-) TimerEvent: {}
+[5.986787] (-) TimerEvent: {}
+[6.091496] (-) TimerEvent: {}
+[6.198982] (-) TimerEvent: {}
+[6.332892] (-) TimerEvent: {}
+[6.583132] (-) TimerEvent: {}
+[6.942411] (-) TimerEvent: {}
+[7.185861] (-) TimerEvent: {}
+[7.313330] (-) TimerEvent: {}
+[7.545885] (-) TimerEvent: {}
+[7.646857] (-) TimerEvent: {}
+[7.799746] (-) TimerEvent: {}
+[8.082060] (-) TimerEvent: {}
+[8.187969] (-) TimerEvent: {}
+[8.405850] (-) TimerEvent: {}
+[8.658685] (-) TimerEvent: {}
+[8.760224] (-) TimerEvent: {}
+[8.863406] (-) TimerEvent: {}
+[9.091630] (-) TimerEvent: {}
+[9.201589] (-) TimerEvent: {}
+[9.327720] (-) TimerEvent: {}
+[9.519640] (-) TimerEvent: {}
+[9.724531] (-) TimerEvent: {}
+[9.913659] (-) TimerEvent: {}
+[10.014860] (-) TimerEvent: {}
+[10.123937] (-) TimerEvent: {}
+[10.237025] (-) TimerEvent: {}
+[10.368487] (-) TimerEvent: {}
+[10.728421] (-) TimerEvent: {}
+[10.834746] (-) TimerEvent: {}
+[11.084548] (-) TimerEvent: {}
+[11.224343] (-) TimerEvent: {}
+[11.656008] (-) TimerEvent: {}
+[11.924514] (-) TimerEvent: {}
+[12.159448] (-) TimerEvent: {}
+[12.309729] (-) TimerEvent: {}
+[12.846958] (-) TimerEvent: {}
+[12.864834] (etagen_display) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable elevator_display_node\x1b[0m\n'}
+[13.192190] (-) TimerEvent: {}
+[13.231593] (etagen_display) StdoutLine: {'line': b'[100%] Built target elevator_display_node\n'}
+[13.242942] (etagen_display) CommandEnded: {'returncode': 0}
+[13.281326] (etagen_display) JobProgress: {'identifier': 'etagen_display', 'progress': 'install'}
+[13.289202] (etagen_display) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros2/intp-ros/build/etagen_display'], 'cwd': '/home/ros2/intp-ros/build/etagen_display', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ros2', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ros2', 'OLDPWD': '/home/ros2/intp-ros/etagen_disp', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1878', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ros2/intp-ros/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ros2', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ros2', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ros2-VirtualBox:@/tmp/.ICE-unix/1837,unix/ros2-VirtualBox:/tmp/.ICE-unix/1837', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/5cece297_dae2_46f2_ac87_561a45dd5158', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'de_DE.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.HNWLX2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.131', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ros2/intp-ros/install/call_button_py:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ros2/intp-ros/build/etagen_display', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ros2/intp-ros/install/call_button_py/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ros2/intp-ros/install/call_button_py:/opt/ros/jazzy'}), 'shell': False}
+[13.293828] (-) TimerEvent: {}
+[13.296185] (etagen_display) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.296403] (etagen_display) StdoutLine: {'line': b'-- Installing: /home/ros2/intp-ros/install/etagen_display/lib/etagen_display/elevator_display_node\n'}
+[13.307773] (etagen_display) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ros2/intp-ros/install/etagen_display/lib/etagen_display/elevator_display_node" to ""\n'}
+[13.308098] (etagen_display) StdoutLine: {'line': b'-- Installing: /home/ros2/intp-ros/install/etagen_display/share/ament_index/resource_index/package_run_dependencies/etagen_display\n'}
+[13.308248] (etagen_display) StdoutLine: {'line': b'-- Installing: /home/ros2/intp-ros/install/etagen_display/share/ament_index/resource_index/parent_prefix_path/etagen_display\n'}
+[13.308333] (etagen_display) StdoutLine: {'line': b'-- Installing: /home/ros2/intp-ros/install/etagen_display/share/etagen_display/environment/ament_prefix_path.sh\n'}
+[13.308374] (etagen_display) StdoutLine: {'line': b'-- Installing: /home/ros2/intp-ros/install/etagen_display/share/etagen_display/environment/ament_prefix_path.dsv\n'}
+[13.308496] (etagen_display) StdoutLine: {'line': b'-- Installing: /home/ros2/intp-ros/install/etagen_display/share/etagen_display/environment/path.sh\n'}
+[13.308537] (etagen_display) StdoutLine: {'line': b'-- Installing: /home/ros2/intp-ros/install/etagen_display/share/etagen_display/environment/path.dsv\n'}
+[13.309105] (etagen_display) StdoutLine: {'line': b'-- Installing: /home/ros2/intp-ros/install/etagen_display/share/etagen_display/local_setup.bash\n'}
+[13.309164] (etagen_display) StdoutLine: {'line': b'-- Installing: /home/ros2/intp-ros/install/etagen_display/share/etagen_display/local_setup.sh\n'}
+[13.309201] (etagen_display) StdoutLine: {'line': b'-- Installing: /home/ros2/intp-ros/install/etagen_display/share/etagen_display/local_setup.zsh\n'}
+[13.309234] (etagen_display) StdoutLine: {'line': b'-- Installing: /home/ros2/intp-ros/install/etagen_display/share/etagen_display/local_setup.dsv\n'}
+[13.309439] (etagen_display) StdoutLine: {'line': b'-- Installing: /home/ros2/intp-ros/install/etagen_display/share/etagen_display/package.dsv\n'}
+[13.309699] (etagen_display) StdoutLine: {'line': b'-- Installing: /home/ros2/intp-ros/install/etagen_display/share/ament_index/resource_index/packages/etagen_display\n'}
+[13.309937] (etagen_display) StdoutLine: {'line': b'-- Installing: /home/ros2/intp-ros/install/etagen_display/share/etagen_display/cmake/etagen_displayConfig.cmake\n'}
+[13.309980] (etagen_display) StdoutLine: {'line': b'-- Installing: /home/ros2/intp-ros/install/etagen_display/share/etagen_display/cmake/etagen_displayConfig-version.cmake\n'}
+[13.310024] (etagen_display) StdoutLine: {'line': b'-- Installing: /home/ros2/intp-ros/install/etagen_display/share/etagen_display/package.xml\n'}
+[13.311062] (etagen_display) CommandEnded: {'returncode': 0}
+[13.387628] (etagen_display) JobEnded: {'identifier': 'etagen_display', 'rc': 0}
+[13.388371] (-) EventReactorShutdown: {}

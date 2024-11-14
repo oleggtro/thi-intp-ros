@@ -1,0 +1,63 @@
+[0.045s] Invoking command in '/home/ros2/intp-ros/build/etagen_display': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros2/intp-ros/install/call_button_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ros2/intp-ros/etagen_disp/etagen_display -DCMAKE_INSTALL_PREFIX=/home/ros2/intp-ros/install/etagen_display
+[0.475s] -- The C compiler identification is GNU 13.2.0
+[0.721s] -- The CXX compiler identification is GNU 13.2.0
+[0.756s] -- Detecting C compiler ABI info
+[0.872s] -- Detecting C compiler ABI info - done
+[0.888s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.888s] -- Detecting C compile features
+[0.891s] -- Detecting C compile features - done
+[0.906s] -- Detecting CXX compiler ABI info
+[1.019s] -- Detecting CXX compiler ABI info - done
+[1.019s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.020s] -- Detecting CXX compile features
+[1.021s] -- Detecting CXX compile features - done
+[1.035s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.179s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.344s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.419s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.438s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.468s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.494s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.624s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.643s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.791s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.810s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.829s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.992s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.019s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.133s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.133s] -- Configured cppcheck include dirs: 
+[2.133s] -- Configured cppcheck exclude dirs and/or files: 
+[2.138s] -- Added test 'lint_cmake' to check CMake code style
+[2.143s] -- Added test 'uncrustify' to check C / C++ code style
+[2.143s] -- Configured uncrustify additional arguments: 
+[2.145s] -- Added test 'xmllint' to check XML markup files
+[2.150s] -- Configuring done (2.0s)
+[2.161s] -- Generating done (0.0s)
+[2.162s] -- Build files have been written to: /home/ros2/intp-ros/build/etagen_display
+[2.172s] Invoked command in '/home/ros2/intp-ros/build/etagen_display' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros2/intp-ros/install/call_button_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ros2/intp-ros/etagen_disp/etagen_display -DCMAKE_INSTALL_PREFIX=/home/ros2/intp-ros/install/etagen_display
+[2.172s] Invoking command in '/home/ros2/intp-ros/build/etagen_display': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros2/intp-ros/install/call_button_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ros2/intp-ros/build/etagen_display -- -j4 -l4
+[2.223s] [ 50%] [32mBuilding CXX object CMakeFiles/elevator_display_node.dir/src/elevator_display_node.cpp.o[0m
+[12.860s] [100%] [32m[1mLinking CXX executable elevator_display_node[0m
+[13.227s] [100%] Built target elevator_display_node
+[13.238s] Invoked command in '/home/ros2/intp-ros/build/etagen_display' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros2/intp-ros/install/call_button_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ros2/intp-ros/build/etagen_display -- -j4 -l4
+[13.285s] Invoking command in '/home/ros2/intp-ros/build/etagen_display': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros2/intp-ros/install/call_button_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ros2/intp-ros/build/etagen_display
+[13.291s] -- Install configuration: ""
+[13.292s] -- Installing: /home/ros2/intp-ros/install/etagen_display/lib/etagen_display/elevator_display_node
+[13.303s] -- Set non-toolchain portion of runtime path of "/home/ros2/intp-ros/install/etagen_display/lib/etagen_display/elevator_display_node" to ""
+[13.303s] -- Installing: /home/ros2/intp-ros/install/etagen_display/share/ament_index/resource_index/package_run_dependencies/etagen_display
+[13.303s] -- Installing: /home/ros2/intp-ros/install/etagen_display/share/ament_index/resource_index/parent_prefix_path/etagen_display
+[13.304s] -- Installing: /home/ros2/intp-ros/install/etagen_display/share/etagen_display/environment/ament_prefix_path.sh
+[13.304s] -- Installing: /home/ros2/intp-ros/install/etagen_display/share/etagen_display/environment/ament_prefix_path.dsv
+[13.304s] -- Installing: /home/ros2/intp-ros/install/etagen_display/share/etagen_display/environment/path.sh
+[13.304s] -- Installing: /home/ros2/intp-ros/install/etagen_display/share/etagen_display/environment/path.dsv
+[13.304s] -- Installing: /home/ros2/intp-ros/install/etagen_display/share/etagen_display/local_setup.bash
+[13.304s] -- Installing: /home/ros2/intp-ros/install/etagen_display/share/etagen_display/local_setup.sh
+[13.304s] -- Installing: /home/ros2/intp-ros/install/etagen_display/share/etagen_display/local_setup.zsh
+[13.304s] -- Installing: /home/ros2/intp-ros/install/etagen_display/share/etagen_display/local_setup.dsv
+[13.305s] -- Installing: /home/ros2/intp-ros/install/etagen_display/share/etagen_display/package.dsv
+[13.305s] -- Installing: /home/ros2/intp-ros/install/etagen_display/share/ament_index/resource_index/packages/etagen_display
+[13.305s] -- Installing: /home/ros2/intp-ros/install/etagen_display/share/etagen_display/cmake/etagen_displayConfig.cmake
+[13.305s] -- Installing: /home/ros2/intp-ros/install/etagen_display/share/etagen_display/cmake/etagen_displayConfig-version.cmake
+[13.305s] -- Installing: /home/ros2/intp-ros/install/etagen_display/share/etagen_display/package.xml
+[13.306s] Invoked command in '/home/ros2/intp-ros/build/etagen_display' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros2/intp-ros/install/call_button_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ros2/intp-ros/build/etagen_display

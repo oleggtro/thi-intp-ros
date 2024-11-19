@@ -1,7 +1,7 @@
 import rclpy
 import re
 import std_msgs.msg
-from aufzug.elevator_msgs.msg import CallToFloor
+from elevator_msgs.msg import CallToFloor
 
 from rclpy.node import Node
 
@@ -36,10 +36,12 @@ def main(args=None):
     false_input = True
     floor = 0
 
+    print("Version: 0.1.0")
+
     while(false_input):
         floor = input("Enter the floor of this panel: ")
-        if re.search("[0-20]", floor):
-            floor = re.search("[0-20]", floor).group()
+        if re.search("[0-9]", floor):
+            floor = re.search("[0-9]", floor).group()
             false_input = False
 
     call_button = CallButton(floor)

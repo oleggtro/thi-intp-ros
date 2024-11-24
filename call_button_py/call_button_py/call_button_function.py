@@ -5,7 +5,7 @@ from elevator_msgs.msg import CallToFloor
 
 from rclpy.node import Node
 
-from std_msgs.msg import String
+#from std_msgs.msg import String
 
 
 
@@ -14,9 +14,9 @@ class CallButton(Node):
     def __init__(self, floor):
         super().__init__('call_button')
         self.floor = floor
-        self.publisher_ = self.create_publisher(String, 'CallToFloor', 10) # Versendeter Wert, Topic, Warteschlange wenn Subscriber zu langsam ist
+        self.publisher_ = self.create_publisher(CallToFloor, 'CallToFloor', 10) # Versendeter Wert, Topic, Warteschlange wenn Subscriber zu langsam ist
 
-    def press_button(selfn, going_up):
+    def press_button(self, going_up):
         msg = CallToFloor()
         msg.floor = self.floor
         msg.going_up = going_up
@@ -35,25 +35,27 @@ def main(args=None):
 
     false_input = True
     floor = 0
+    input1 = ''
 
-    print("Version: 0.1.0")
+    print("Version: 0.1.1")
 
     while(false_input):
-        floor = input("Enter the floor of this panel: ")
-        if re.search("[0-9]", floor):
-            floor = re.search("[0-9]", floor).group()
+        print("Enter the floor of this panel: ")
+        input1 = '1' #Input()
+        if re.search("[0-9]", input1):
+            floor = re.search("[0-9]", input1).group()
             false_input = False
 
     call_button = CallButton(floor)
     going_up = True
 
-    while(True):
-        print("Floor " + call_button.floor)
-        input = input("Input 'down' or 'up' to call elevator: ")
-        if input == "down" or input == "up":
-            if input == "down":
-                going_up = False
-            call_button.press_button()
+    #while(True):
+    print("Floor " + call_button.floor)
+    input = 'up' #input("Input 'down' or 'up' to call elevator: ")
+    if input == "down" or input == "up":
+        if input == "down":
+            going_up = False
+        call_button.press_button(going_up)
 
 
     # Destroy the node explicitly

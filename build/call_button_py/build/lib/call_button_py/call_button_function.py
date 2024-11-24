@@ -18,7 +18,7 @@ class CallButton(Node):
 
     def press_button(self, going_up):
         msg = CallToFloor()
-        msg.floor = self.floor
+        msg.floor = 1 # self.floor
         msg.going_up = going_up
         msg.going_down = not going_up
         self.publisher_.publish(msg)# maybe publish two to three times every call
@@ -37,7 +37,7 @@ def main(args=None):
     floor = 0
     input1 = ''
 
-    print("Version: 0.1.1")
+    print("Version: 0.1.2")
 
     while(false_input):
         print("Enter the floor of this panel: ")
@@ -61,7 +61,7 @@ def main(args=None):
     # Destroy the node explicitly
     # (optional - otherwise it will be done automatically
     # when the garbage collector destroys the node object)
-    minimal_publisher.destroy_node()
+    call_button.destroy_node()
     rclpy.shutdown()
 
 

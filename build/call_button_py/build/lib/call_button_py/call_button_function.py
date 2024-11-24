@@ -18,7 +18,7 @@ class CallButton(Node):
 
     def press_button(self, going_up):
         msg = CallToFloor()
-        msg.floor = 1 # self.floor
+        msg.floor = int(self.floor)
         msg.going_up = going_up
         msg.going_down = not going_up
         self.publisher_.publish(msg)# maybe publish two to three times every call
@@ -35,27 +35,28 @@ def main(args=None):
 
     false_input = True
     floor = 0
-    input1 = ''
+    user_str = ''
 
-    print("Version: 0.1.2")
+    print("Version: 0.1.3")
 
     while(false_input):
         print("Enter the floor of this panel: ")
-        input1 = '1' #Input()
-        if re.search("[0-9]", input1):
-            floor = re.search("[0-9]", input1).group()
+        user_str = input()
+        if re.search("[0-9]", user_str):
+            floor = re.search("[0-9]", user_str).group()
             false_input = False
 
     call_button = CallButton(floor)
     going_up = True
 
-    #while(True):
-    print("Floor " + call_button.floor)
-    input = 'up' #input("Input 'down' or 'up' to call elevator: ")
-    if input == "down" or input == "up":
-        if input == "down":
-            going_up = False
-        call_button.press_button(going_up)
+    while(True):
+        print("Floor " + call_button.floor)
+        print("Input 'down' or 'up' to call elevator: ")
+        user_str = input()
+        if user_str == "down" or user_str == "up":
+            if user_str == "down":
+                going_up = False
+            call_button.press_button(going_up)
 
 
     # Destroy the node explicitly

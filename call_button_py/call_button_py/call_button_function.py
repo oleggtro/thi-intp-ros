@@ -52,7 +52,7 @@ def main(args=None):
     while(True):
         print("Floor " + call_button.floor)
         print("Input 'down' or 'up' to call elevator: ")
-        user_str = input()
+        user_str = input().lower()
         if user_str == "down" or user_str == "up":
             if user_str == "down":
                 going_up = False

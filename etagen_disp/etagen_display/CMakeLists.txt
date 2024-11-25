@@ -9,6 +9,13 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/CallToFloor.msg"
+  "msg/ElevatorStatus.msg"
+ )
 
 #executable for node
 add_executable(elevator_display_node src/elevator_display_node.cpp)

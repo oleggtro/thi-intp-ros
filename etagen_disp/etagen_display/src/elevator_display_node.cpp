@@ -2,7 +2,7 @@
 #include "std_msgs/msg/u_int8.hpp"
 #include "std_msgs/msg/bool.hpp"
 #include "std_msgs/msg/string.hpp"
-#include "etagen_display/msg/elevator_status.hpp"
+//#include "etagen_display/msg/elevator_status.hpp"
 
 using namespace std::chrono_literals;
 
@@ -18,9 +18,9 @@ public:
         direction_down_subscriber_ = this->create_subscription<std_msgs::msg::Bool>(
             "ElevatorStatus/going_down", 10, std::bind(&ElevatorDisplayNode::direction_down_callback, this, std::placeholders::_1));
 
-        status_msg_subscriber_ = this->create_subscription<elevator_display::msg::ElevatorStatus>(
+       /* status_msg_subscriber_ = this->create_subscription<elevator_display::msg::ElevatorStatus>(
             "elevatorstatus", 10, std::bind(&ElevatorDisplayNode::status_callback, this, std::placeholders::_1)
-        );
+        );*/
 
 
 
@@ -53,9 +53,9 @@ private:
         last_update_time_ = this->now();  // Aktualisiere die Zeit der letzten Bewegung
     }
 
-    void status_callback(const etagen_display::msg::ElevatorStatus::SharedPtr msg) {
+   /* void status_callback(const etagen_display::msg::ElevatorStatus::SharedPtr msg) {
         
-    }
+    }*/
 
     void check_timeout() {
         // Zeit seit der letzten Aktualisierung berechnen

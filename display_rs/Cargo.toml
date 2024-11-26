@@ -3,6 +3,13 @@ name = "display_rs"
 version = "0.1.0"
 edition = "2021"
 
+# We use a custom profile to keep colcon
+# separate from "normal" rust building.
+[profile.colcon]
+inherits = "release"
+
+
 [dependencies]
+chrono = { version = "0.4.38", features = ["serde"] }
 futures = "0.3.31"
 r2r = "0.9.4"

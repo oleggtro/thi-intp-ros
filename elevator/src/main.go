@@ -67,7 +67,7 @@ func run() error {
 	defer ws.Close()
 	ws.AddSubscriptions(sub.Subscription)
 
-	// Status jede Sekunde veröffentlichen
+	// publish status every sec
 	go func() {
 		for {
 			select {
@@ -90,26 +90,26 @@ func run() error {
 	return ws.Run(ctx)
 }
 
-// Globale Variablen zur Verwaltung des Aufzugszustands
+// global state vars
 var (
 	currentFloor int8 = 0
 	goingUp      bool = false
 	goingDown    bool = false
 )
 
-// Funktion zur Verarbeitung einer Etagenanforderung
+// subscriber fn
 func handleFloorRequest(call *elevator_msgs.CallToFloor, pub *elevator_msgs.ElevatorStatusPublisher) {
 	targetFloor := call.Floor
 	if targetFloor == currentFloor {
-		// Nichts tun, wenn bereits im Zielgeschoss
+		// already at target floor
 		return
 	}
 
-	// Richtung festlegen
+	// decide direction to go in
 	goingUp = targetFloor > currentFloor
 	goingDown = targetFloor < currentFloor
 
-	// Aufzugsbewegung simulieren
+	// simulate elevator
 	for currentFloor != targetFloor {
 		if goingUp {
 			currentFloor++
@@ -119,7 +119,7 @@ func handleFloorRequest(call *elevator_msgs.CallToFloor, pub *elevator_msgs.Elev
 		time.Sleep(1 * time.Second)
 	}
 
-	// Richtung zurücksetzen
+	// reset direction
 	goingUp = false
 	goingDown = false
 }

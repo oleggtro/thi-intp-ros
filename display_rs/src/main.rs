@@ -6,10 +6,6 @@ use r2r::QosProfile;
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let ctx = r2r::Context::create()?;
     let mut node = r2r::Node::create(ctx, "display_rs", "")?;
-    // let mut sub =
-    //     node.subscribe::<elevator_msgs::msg::ElevatorStatus>("/topic", QosProfile::default())?;
-    // let p = node
-    //     .create_publisher::<elevator_msgs::msg::ElevatorStatus>("/topic2", QosProfile::default())?;
 
     let mut pool = LocalPool::new();
     let spawner = pool.spawner();
@@ -35,7 +31,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         }
     })?; */
 
-    let last_update_received = Utc::now();
+    let mut last_update_received = Utc::now();
     let mut worker = node.subscribe::<elevator_msgs::msg::ElevatorStatus>(
         "/elevatorstatus",
         QosProfile::default(),
@@ -52,6 +48,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 Some(msg) => {
                     let going_up = msg.going_up;
                     let going_down = msg.going_down;
+
+                    last_update_received = Utc::now();
 
                     let dir = {
                         let rs = if going_up && !going_down {
@@ -94,7 +92,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                             println!("last update is more than 30s old");
                             elevator_paused = true;
                         }
-                        println!("elevator is paused, but im outside of the paused check");
+                        println!("this shouldn't happen");
                     }
                 }
             }

@@ -16,21 +16,6 @@ class CallButton(Node):
         self.floor = floor
         self.publisher_ = self.create_publisher(CallToFloor, 'calltofloor', 10) # Versendeter Wert, Topic, Warteschlange wenn Subscriber zu langsam ist
 
-    def press_button(self, going_up):
-        msg = CallToFloor()
-        msg.floor = int(self.floor)
-        msg.going_up = going_up
-        msg.going_down = not going_up
-        self.publisher_.publish(msg) # maybe publish two to three times every call
-        going = ""
-        if going_up:
-            going = "up"
-        else:
-            going = "down"
-        self.get_logger().info("Call elevator to floor " + self.floor + " going " + going)
-
-
-    
     def press_button_simple(self):
         msg = CallToFloor()
         msg.floor = int(self.floor)
@@ -39,6 +24,20 @@ class CallButton(Node):
         self.publisher_.publish(msg) # maybe publish two to three times every call
         self.get_logger().info("Call elevator to floor " + self.floor)
 
+    def press_button(self, going_up):
+        msg = CallToFloor()
+        msg.floor = int(self.floor)
+        msg.going_up = going_up
+
+        
+        msg.going_down = not going_up
+        self.publisher_.publish(msg) # maybe publish two to three times every call
+        going = ""
+        if going_up:
+            going = "up"
+        else:
+            going = "down"
+        self.get_logger().info("Call elevator to floor " + self.floor + " going " + going)
 
 def main(args=None):
     rclpy.init(args=args)
@@ -66,12 +65,6 @@ def main(args=None):
 
     while(True):
         print("Floor " + call_button.floor)
-        #print("Input 'down' or 'up' to call elevator: ")
-        #user_str = input().lower()
-        #if user_str == "down" or user_str == "up":
-        #    if user_str == "down":
-        #        going_up = False
-        #    call_button.press_button(going_up)
         print("Press ENTER to call elevator")
         input()
         call_button.press_button_simple()

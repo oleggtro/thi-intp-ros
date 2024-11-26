@@ -23,7 +23,7 @@ func init() {
 }
 
 type ElevatorStatus struct {
-	CurrentFloor uint8 `yaml:"current_floor"`
+	CurrentFloor int8 `yaml:"current_floor"`
 	GoingUp bool `yaml:"going_up"`
 	GoingDown bool `yaml:"going_down"`
 }
@@ -134,7 +134,7 @@ func (t _ElevatorStatusTypeSupport) ReleaseMemory(pointer_to_free unsafe.Pointer
 func (t _ElevatorStatusTypeSupport) AsCStruct(dst unsafe.Pointer, msg types.Message) {
 	m := msg.(*ElevatorStatus)
 	mem := (*C.elevator_msgs__msg__ElevatorStatus)(dst)
-	mem.current_floor = C.uint8_t(m.CurrentFloor)
+	mem.current_floor = C.int8_t(m.CurrentFloor)
 	mem.going_up = C.bool(m.GoingUp)
 	mem.going_down = C.bool(m.GoingDown)
 }
@@ -142,7 +142,7 @@ func (t _ElevatorStatusTypeSupport) AsCStruct(dst unsafe.Pointer, msg types.Mess
 func (t _ElevatorStatusTypeSupport) AsGoStruct(msg types.Message, ros2_message_buffer unsafe.Pointer) {
 	m := msg.(*ElevatorStatus)
 	mem := (*C.elevator_msgs__msg__ElevatorStatus)(ros2_message_buffer)
-	m.CurrentFloor = uint8(mem.current_floor)
+	m.CurrentFloor = int8(mem.current_floor)
 	m.GoingUp = bool(mem.going_up)
 	m.GoingDown = bool(mem.going_down)
 }

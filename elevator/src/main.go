@@ -92,9 +92,9 @@ func run() error {
 
 // Globale Variablen zur Verwaltung des Aufzugszustands
 var (
-	currentFloor uint8 = 0
-	goingUp      bool  = false
-	goingDown    bool  = false
+	currentFloor int8 = 0
+	goingUp      bool = false
+	goingDown    bool = false
 )
 
 // Funktion zur Verarbeitung einer Etagenanforderung

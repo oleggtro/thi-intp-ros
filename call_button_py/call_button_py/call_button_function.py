@@ -31,11 +31,11 @@ class CallButton(Node):
 
 
     
-def press_button_simple(self):
+    def press_button_simple(self):
         msg = CallToFloor()
         msg.floor = int(self.floor)
-        msg.going_up = false
-        msg.going_down = false
+        msg.going_up = False
+        msg.going_down = False
         self.publisher_.publish(msg) # maybe publish two to three times every call
         self.get_logger().info("Call elevator to floor " + self.floor)
 
@@ -49,12 +49,17 @@ def main(args=None):
 
     print("Version: 0.1.3")
 
-    while(false_input):
+    while false_input:
         print("Enter the floor of this panel: ")
         user_str = input()
-        if re.search("[0-9]", user_str):
-            floor = re.search("[0-9]", user_str).group()
-            false_input = False
+        # Modify the regex to capture an optional minus sign and digits
+        match = re.fullmatch(r"(-?\d+)", user_str)  # This will match an optional "-" followed by one or more digits
+        if match:
+            floor = str(int(match.group()))  # Convert the matched string to an integer
+            false_input = False  # Set the flag to False to exit the loop
+            print(f"You entered floor: {floor}")
+        else:
+            print("Invalid input. Please enter a valid floor number.") 
 
     call_button = CallButton(floor)
     going_up = True
@@ -68,6 +73,8 @@ def main(args=None):
         #        going_up = False
         #    call_button.press_button(going_up)
         print("Press ENTER to call elevator")
+        input()
+        call_button.press_button_simple()
 
 
     # Destroy the node explicitly

@@ -1,3 +1,3 @@
-uint8 floor
+int8 floor
 bool going_up
 bool going_down

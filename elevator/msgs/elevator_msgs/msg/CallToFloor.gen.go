@@ -23,7 +23,7 @@ func init() {
 }
 
 type CallToFloor struct {
-	Floor uint8 `yaml:"floor"`
+	Floor int8 `yaml:"floor"`
 	GoingUp bool `yaml:"going_up"`
 	GoingDown bool `yaml:"going_down"`
 }
@@ -134,7 +134,7 @@ func (t _CallToFloorTypeSupport) ReleaseMemory(pointer_to_free unsafe.Pointer) {
 func (t _CallToFloorTypeSupport) AsCStruct(dst unsafe.Pointer, msg types.Message) {
 	m := msg.(*CallToFloor)
 	mem := (*C.elevator_msgs__msg__CallToFloor)(dst)
-	mem.floor = C.uint8_t(m.Floor)
+	mem.floor = C.int8_t(m.Floor)
 	mem.going_up = C.bool(m.GoingUp)
 	mem.going_down = C.bool(m.GoingDown)
 }
@@ -142,7 +142,7 @@ func (t _CallToFloorTypeSupport) AsCStruct(dst unsafe.Pointer, msg types.Message
 func (t _CallToFloorTypeSupport) AsGoStruct(msg types.Message, ros2_message_buffer unsafe.Pointer) {
 	m := msg.(*CallToFloor)
 	mem := (*C.elevator_msgs__msg__CallToFloor)(ros2_message_buffer)
-	m.Floor = uint8(mem.floor)
+	m.Floor = int8(mem.floor)
 	m.GoingUp = bool(mem.going_up)
 	m.GoingDown = bool(mem.going_down)
 }
